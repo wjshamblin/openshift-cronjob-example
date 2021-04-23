@@ -17,12 +17,12 @@ spec:
         spec:
           containers:
           - env:
-            - name: NAMESPACE
+            - name: compsci
               valueFrom:
                 fieldRef:
                   fieldPath: metadata.namespace
             - name: HOST
-              value: https://open.shift.host:port
+              value: https://manage.cloud.duke.edu:443
             image: py-cron/py-cron:1.0
             imagePullPolicy: Always
             name: py-cron
